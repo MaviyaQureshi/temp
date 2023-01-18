@@ -1,0 +1,237 @@
+.panel{
+    display: flex;
+    height : 70px;
+    justify-content: center;
+    margin-top: -8px;
+    margin-right: -8px;
+    margin-left: -8px;
+}
+.logo{
+    display: flex;
+    height: 40px;
+    width: 400px;    
+    border:none;
+    justify-content: end;
+    font-weight: 300;
+    border-radius: 60px;
+    margin: 0px;
+    margin-right: 1130px;
+    margin-top : 15px;
+    border: none;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size : 20px;
+    font-weight : 700;
+    margin-top: 30px;
+    margin-left: -100px;
+    transition: 0.2s;
+    height: 0px;
+}
+
+.style{
+    padding-right : 11px;
+}
+
+.image{
+    height : 80px;
+    width : 100px;
+}
+
+.site-name{
+    margin-top: 15px;
+    font-family: 'Caveat', cursive;
+    font-size : 40px
+}
+
+.contactus,
+.learnmore{
+    background-color: transparent;
+    border: none;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size : 20px;
+    font-weight : 700;
+    margin-top: 45px;
+    transition: 0.2s;
+    height: 0px;
+}
+.learnmore{
+    margin-right: -8px;
+}
+
+.contactus{
+    margin-right: 14px;
+}
+
+.logo,
+.contactus:hover,
+.learnmore:hover{
+    cursor: pointer;
+}
+
+.logo,
+.contactus:active,
+.learnmore:active{
+    color: black;
+}
+
+.body{
+    style="background-image: url('bg-image.jpg');"
+    height: 40rem;
+    margin-right: -8px;
+    margin-top: -80px;
+    margin-left: -100px;
+    margin-bottom: -100px;
+    display: flex;
+    justify-content: center;
+    padding-top: 250px;
+    padding-right : 700px;
+}
+
+.enter1{
+    background-color: white;
+    height : 490px;
+    width : 400px;
+    border-radius : 18px;
+    transition: box-shadow 0.2s;
+    animation-name: example;
+    animation-duration: 4s;
+    position : relative;
+}
+
+.enter1:hover{
+    box-shadow: 5px 5px 5px rgb(90, 82, 82);
+}
+
+@keyframes example {
+    0%   {background-color:transparent; right:600px; top:0px;}
+    40%  {background-color:white; right:0px; top:0px;}
+}
+
+
+.container{
+    margin-top: 100px;
+    margin-left: 65px;
+    font-family: 'Roboto', sans-serif;
+    font-weight : 500;
+}
+
+.login{
+    margin-top : -30px;
+    margin-left: 10px;
+    font-size: 26px;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight : 700;
+    color: darkgreen;
+
+}
+
+.ask-signin{
+    padding-left: 40px;
+    padding-top: 30px;
+}
+
+.motto-class{
+    margin-top : -600px;
+    margin-left : 900px;
+    font-family: 'Lobster', cursive;
+    font-size : 36px;
+}
+
+.frame{
+    margin-top:50px;
+}
+
+.user,
+.pass{
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+
+.name,
+.word{
+    width : 260px;
+    border: 1px;
+    border-style: solid;
+    height : 30px;
+    border-radius: 9px;
+    padding-left: 16px;
+    font-size: 16px;
+    padding-top: 5px;
+    padding-bottom: 6px;
+    font-family: 'Roboto', sans-serif;
+    font-weight : 500;
+    transition: outline,border,box-shadow 0.3s;
+}
+
+.name:hover,
+.word:hover{
+    border: none;
+    outline:none;
+    box-shadow : 4px 3px 5px rgb(170, 170, 170);
+}
+
+.name:focus,
+.word:focus{
+    border: none;
+    outline:none;
+    box-shadow : 4px 3px 5px rgb(170, 170, 170);
+}
+
+
+.forgot{
+    margin-top: 8px;
+    font-size: 14px;
+}
+
+.forgot:active{
+    color: red;
+}
+
+.facelog{
+    margin-top: 20px;
+    width : 280px;
+    height : 45px;
+    border : none;
+    border-radius : 13px;
+    background-color:  darkgreen;
+    font-family: 'Roboto', sans-serif;
+    font-weight : 500;
+    color : white;
+    font-size : 18px;
+    transition: background-color 0.2s;
+}
+
+.facelog:hover{
+    background-color: rgb(82, 188, 82);
+}
+
+.facelog:active{
+    background-color: lightgreen;
+}
+
+
+/* .footer{
+    display: flex;
+    justify-content: space-evenly;
+    height: 80px;
+    align-items: center;
+    margin : 0px;
+    background-color: rgb(18, 18, 18);
+    margin-bottom: -8px;
+    margin-left : -8px;
+    margin-right : -8px;
+    font-family: 'Roboto', sans-serif;
+    font-weight : 500;
+    font-size : 15px;
+    background-image: linear-gradient( rgb(0, 0, 0),rgb(176, 176, 176));
+} */
+
+.help,
+.terms,
+.sup,
+.about{
+    text-decoration: none;
+    color: white;
+}
