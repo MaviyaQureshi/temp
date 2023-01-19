@@ -7,8 +7,8 @@ if(isset($_GET['id']))
 $id = $_GET['id'];
 $bemailid=$_SESSION['bemailid']; 
 $sql = "SELECT * FROM `imgupload` WHERE id = '{$id}'";
-        $result = $conn->query($sql);
-        echo"<h2>Details Of Seller</h2><br>";
+        $result = $conn->query($sql); -->
+        echo"<h2 class="heading">Details Of Seller</h2><br>";
     
         if ($result->num_rows > 0) {
           // output data of each row
@@ -44,6 +44,11 @@ $sql = "SELECT * FROM `imgupload` WHERE id = '{$id}'";
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="buy.css">
     <title>buy</title>
 </head>
 <body>
@@ -57,25 +62,40 @@ if($showAlert){
         </div> ';
     }
     ?>
+
+    <nav>
+        <div class="nav-main">
+            <div class="nav-header">
+                <a href="" class="link"><img src="copy-removebg-preview.png" class="logo"> <span class="site-name">Fresh Fields</span></a> 
+            </div>
+        </div>
+    </nav>
 <form action = "buy.php" method="post" enctype="multipart/form-data">
-<div class = "form-group">
-        <label for="idp"> Product ID : </label>
-        <input type="text" name="idp" id="idp" class="form-control">
-    </div>
-    <div class = "form-group">
-        <label for="femailid"> Sellers ID : </label>
-        <input type="text" name="femailid" id="femailid" class="form-control">
-    </div>
     
-    <div class = "form-group">
-        <label for="pricekg"> Price/kg : </label>
-        <input type="text" name="pricekg" id="pricekg" class="form-control">
+    <div class="container">
+        <div class = "form-group">
+                <label for="idp"> Product ID : </label>
+                <input type="text" name="idp" id="idp" class="form-control">
+            </div>
+            <div class = "form-group">
+                <label for="femailid"> Sellers ID : </label>
+                <input type="text" name="femailid" id="femailid" class="form-control">
+            </div>
+            
+            <div class = "form-group">
+                <label for="pricekg"> Price/kg : </label>
+                <input type="text" name="pricekg" id="pricekg" class="form-control">
+            </div>
+            <div class = "form-group">
+                <label for="quantity"> Quantity/Kg : </label>
+                <input type="text" name="quantity" id="quantity" class="form-control">
+            </div>
+            <input type="submit" name="submit" value="Submit" class="btn btn-success" id="button">
     </div>
-    <div class = "form-group">
-        <label for="quantity"> Quantity/Kg : </label>
-        <input type="text" name="quantity" id="quantity" class="form-control">
-    </div>
-    <input type="submit" name="submit" value="Submit" class="btn btn-success">
+
 </form>
+<style>
+
+</style>
 </body>
 </html>
