@@ -30,7 +30,7 @@
                 <th>Product</th>
                 <th>Price/Kg</th>
                 <th>Product image</th>
-                <th>Delete</th>
+                <th>BUY</th>
             </thead>
 
             <tbody>
